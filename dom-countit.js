@@ -25,12 +25,6 @@ const saveInput = (userInput) => {
     console.log(input);
   }
 
-const duplicates = (string) => {
-    let element = document.createElement('div');
-    element.innerText = string;
-    document.body.appendChild(element);
-}
-
 const countDuplicates = () => {
     let charExclusion = input.replace(/[^a-zA-Z]/g, ""); // removes special characters and whitespace from string
     let cleanWord = charExclusion.toLowerCase(); //changes uppercase to lowercase

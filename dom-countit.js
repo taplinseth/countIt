@@ -38,10 +38,11 @@ const countDuplicates = () => {
             duplicates[sortedArray[i]] = 1 // else property equals 1
         }
     }
-    console.log(duplicates);
-    let duplicatesStr = JSON.stringify(duplicates);
-    const para = document.createElement("p");
-    para.innerHTML = duplicatesStr;
-    document.getElementById("myDiv").appendChild(para);
+
+    for (var prop in duplicates) {
+
+        document.getElementById('myList').innerHTML += '<li>' + prop + ': ' + duplicates[prop] + '</li>';
+
+    }
 }
 
